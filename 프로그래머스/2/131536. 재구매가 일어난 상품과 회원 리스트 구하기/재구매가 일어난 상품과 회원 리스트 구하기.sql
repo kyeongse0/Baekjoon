@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+-- WHERE a.
+-- 유저별로 PRODUCT_ID 테이블을 만드나? => GROUP BY로 테이블을 만드는거엿슴.. ㅁㅊ
+-- COUNT? 연산자?
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(*) >= 2
+ORDER BY USER_ID ASC, PRODUCT_ID DESC;
