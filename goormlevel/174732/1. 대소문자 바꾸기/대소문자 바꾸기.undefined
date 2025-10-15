@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+input().split()
+word = input()
+answer = ""
+for i in word:
+	if ord(i) <= 90:
+		answer += chr(ord(i) +32)
+	else:
+		answer += chr(ord(i)-32)
+print(answer)
